@@ -8,7 +8,6 @@ from .context_processors import get_cart_counter, get_cart_amount
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 
-
 # Create your views here.
 def marketplace(request):
     vendors = Vendor.objects.filter(is_approved=True, user__is_active=True)
