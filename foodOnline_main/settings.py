@@ -56,6 +56,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'orders.request_object.RequestObjectMiddleware', # Custom middleware created to access the request object in models.py
 ]
 
 ROOT_URLCONF = 'foodOnline_main.urls'
