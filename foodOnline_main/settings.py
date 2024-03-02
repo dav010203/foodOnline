@@ -26,7 +26,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', cast=bool)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['172.233.223.73', '127.0.0.1', 'arm-foodonline.com', 'www.arm-foodonline.com']
 
 
 # Application definition
